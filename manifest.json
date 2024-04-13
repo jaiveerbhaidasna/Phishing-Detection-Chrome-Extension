@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Phishing Detector",
+  "version": "2.0",
+  "description": "A Chrome extension for phishing detection - WARNING",
+  "permissions": [
+    "webNavigation",
+    "activeTab",
+    "http://*/*",
+    "https://*/*", 
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "warning.html",
+    "warning.js"
+  ]
+}
